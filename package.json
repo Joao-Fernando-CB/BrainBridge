@@ -1,0 +1,16 @@
+{
+  "name": "brainbridge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "tw": "npx @tailwindcss/cli -i ./Views/pages/css/input.css -o ./Views/pages/css/dist/build.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.0.9",
+    "tailwindcss": "^4.0.9"
+  }
+}
