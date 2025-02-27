@@ -95,7 +95,7 @@
                         </button>
                         
                         <!-- Login Button with dark mode enhancements -->
-                        <a href="<?php echo INCLUDE_PATH; ?>/login" class="hidden md:block bg-blue-600 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 text-white font-medium px-4 py-2 rounded-lg transition-colors duration-300">
+                        <a href="<?php echo INCLUDE_PATH; ?>/user/login" class="hidden md:block bg-blue-600 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 text-white font-medium px-4 py-2 rounded-lg transition-colors duration-300">
                             Entrar
                         </a>
                         
