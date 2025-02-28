@@ -1,3 +1,7 @@
+<?php
+    if(isset($arr['user'])){
+?>
+
 <!-- Products Section with improved UI -->
 <section id="produtos" class="py-16 bg-gradient-to-b from-blue-50 to-white dark:from-gray-700  dark:to-gray-800">
     <div class="container mx-auto px-4">
@@ -132,6 +136,145 @@
         </div>
     </div>
 </section>
+
+<?php }else{ ?>
+
+<!-- Products Section with improved UI -->
+<section id="produtos" class="py-16 bg-gradient-to-b from-blue-50 to-white dark:from-gray-700  dark:to-gray-800">
+    <div class="container mx-auto px-4">
+    <div class="text-center mb-12">
+        <h2 class="text-4xl font-bold text-gray-800 dark:text-gray-100 mb-3">Cursos de NR Disponíveis</h2>
+        <div class="w-24 h-1 bg-blue-500 mx-auto mb-6"></div>
+        <p class="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+            Especialistas em treinamentos das Normas Regulamentadoras para garantir a segurança e conformidade no ambiente de trabalho
+        </p>
+    </div>
+
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            
+            <!-- Curso NR 01 -->
+            <div class="bg-white dark:bg-gray-700 dark:hover:bg-gray-800 rounded-xl shadow-lg overflow-hidden group hover:shadow-2xl transition-all duration-300">
+                <div class="relative overflow-hidden">
+                    <img class="w-full h-52 object-cover transition-transform duration-500 group-hover:scale-110" 
+                        src="https://www.maconsultoria.com/wp-content/uploads/2024/02/NR01-ATUALIZADA-scaled.webp" 
+                        alt="Curso NR 01">
+                    <div class="absolute top-3 right-3 bg-blue-500 text-white text-xs font-bold px-3 py-1 rounded-full">
+                        Mais Procurado
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-800 dark:text-gray-100 mb-2">NR 01 - Disposições Gerais</h3>
+                    <p class="text-gray-600 dark:text-gray-300 mb-4">
+                        Curso completo sobre as disposições gerais e exigências de segurança e saúde no trabalho.
+                    </p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-blue-600 dark:text-blue-400 font-bold">R$ 299,90</span>
+                        <button class="bg-blue-600 dark:bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-700 dark:hover:bg-blue-400 transition-colors duration-300 flex items-center" 
+                            onclick="adicionarCarrinho('NR 01')">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                            </svg>
+                            Comprar
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Curso NR 02 -->
+            <div class=" bg-white dark:bg-gray-700 dark:hover:bg-gray-800 rounded-xl shadow-lg overflow-hidden group hover:shadow-2xl transition-all duration-300">
+                <div class="relative overflow-hidden">
+                    <img class="w-full h-52 object-cover transition-transform duration-500 group-hover:scale-110" 
+                        src="https://www.maconsultoria.com/wp-content/uploads/2021/09/nr-2-norma-regulamentadora-2-1-768x432.png" 
+                        alt="Curso NR 02">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-800 dark:text-gray-100 mb-2">NR 02 - Inspeção Prévia</h3>
+                    <p class="text-gray-600 dark:text-gray-300 mb-4">
+                        Curso para entender os requisitos de inspeção prévia e aprovação de instalações.
+                    </p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-blue-600 dark:text-blue-400 font-bold">R$ 249,90</span>
+                        <button class="bg-blue-600 dark:bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-700 dark:hover:bg-blue-400 transition-colors duration-300 flex items-center" 
+                            onclick="adicionarCarrinho('NR 02')">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                            </svg>
+                            Comprar
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Curso NR 03 -->
+            <div class="bg-white dark:bg-gray-700 dark:hover:bg-gray-800 rounded-xl shadow-lg overflow-hidden group hover:shadow-2xl transition-all duration-300">
+                <div class="relative overflow-hidden">
+                    <img class="w-full h-52 object-cover transition-transform duration-500 group-hover:scale-110" src="https://th.bing.com/th/id/R.78578827420941556c3c2f3af81ccc99?rik=I2CPiAEhdsGmCA&pid=ImgRaw&r=0" alt="Curso NR 03">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-800 dark:text-gray-100 mb-2">NR 03 - Embargo ou Interdição</h3>
+                    <p class="text-gray-600 dark:text-gray-300 mb-4">Curso para entender como funcionam embargos e interdições em atividades ou instalações.</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-blue-600 dark:text-blue-400 font-bold">R$ 279,90</span>
+                        <button class="bg-blue-600 dark:bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-700 dark:hover:bg-blue-400 transition-colors duration-300 flex items-center" onclick="adicionarCarrinho('NR 03')">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                            </svg>
+                            Comprar
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Curso NR 04 -->
+            <div class="bg-white dark:bg-gray-700 dark:hover:bg-gray-800 rounded-xl shadow-lg overflow-hidden group hover:shadow-2xl transition-all duration-300">
+                <div class="relative overflow-hidden">
+                    <img class="w-full h-52 object-cover transition-transform duration-500 group-hover:scale-110" src="https://www.maconsultoria.com/wp-content/uploads/2021/09/NR-4-Norma-Regulamentadora-4-1-768x432.png" alt="Curso NR 04">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-800 dark:text-gray-100 mb-2">NR 04 - Serviços Especializados</h3>
+                    <p class="text-gray-600 dark:text-gray-300 mb-4">Curso sobre os serviços especializados em engenharia de segurança e medicina do trabalho.</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-blue-600 dark:text-blue-400 font-bold">R$ 299,90</span>
+                        <button class="bg-blue-600 dark:bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-700 dark:hover:bg-blue-400 transition-colors duration-300 flex items-center" onclick="adicionarCarrinho('NR 04')">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                            </svg>
+                            Comprar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Shopping Cart -->
+        <div class="mt-16 bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8">
+            <div class="flex items-center mb-6">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-600 dark:text-blue-400 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                </svg>
+                <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-100">Seu Carrinho de Compras</h3>
+            </div>
+            <div id="carrinho" class="border dark:border-gray-700 rounded-lg p-4 min-h-32 mb-4">
+                <!-- Cart items will be displayed here -->
+                <p class="text-gray-500 dark:text-gray-400 text-center italic">Seu carrinho está vazio</p>
+            </div>
+            <div class="flex justify-between items-center">
+                <div>
+                    <p class="text-gray-600 dark:text-gray-300">Total: <span id="totalPrice" class="font-bold text-xl text-blue-600 dark:text-blue-400">R$ 0,00</span></p>
+                </div>
+                <button id="finalizarCompra" class="bg-green-600 dark:bg-green-500 text-white px-6 py-3 rounded-lg hover:bg-green-700 dark:hover:bg-green-600 transition-colors duration-300 flex items-center" onclick="finalizarCompra()">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    Finalizar Compra
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+<?php } ?>
+
 
 <!-- About Section -->
 <section id="sobre" class="py-16 bg-gray-100 dark:bg-gray-900">
